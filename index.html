@@ -15,9 +15,19 @@
     })(document);
     smartlook('init', '9445d8b91a51bef6d9dcd95ee1b248ec7fe1edec');
 </script>
+
+<script>
+  // in this variable inser your consent
+  var consentText = 'Here goes consent text from your website.';
+
+  // choose only one variable
+  var clientDecision = true; // if user agreed and provided consent
+
+  smartlook('consentAPI', clientDecision ? consentText : false);
+</script>		
 		
 <script>
-  smartlook('identify', 'user_id');
+  smartlook('identify', 'hardcoded ID');
 </script>
 
 		<title>Editorial by HTML5 UP</title>
